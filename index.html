@@ -25,7 +25,7 @@
         border-radius: 50%;
         box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #efefef,
           inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
-        padding: 20px;
+        padding: 60px;
         background-color: rgb(225, 233, 176);
       }
 
@@ -46,9 +46,69 @@
         transform: rotate(90deg);
         transform-origin: 100%;
         transition: ease-in-out;
+        border: 1px black solid;
+        border-radius: 10px;
       }
 
-      .digital-clock {
+      .sec-hand {
+        background-color: red;
+        height: 5px;
+        width: 50%;
+        border-radius: 10px;
+      }
+
+      .digits {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 24px;
+      }
+      .digit {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        border-radius: 40%;
+        background-color: #000;
+        color: red; /* Change color to red */
+        text-align: center;
+        line-height: 20px;
+      }
+      .digit:nth-child(1) {
+        transform: rotate(300deg) translateX(265px);
+      }
+      .digit:nth-child(2) {
+        transform: rotate(330deg) translateX(265px);
+      }
+      .digit:nth-child(3) {
+        transform: rotate(360deg) translateX(265px);
+      }
+      .digit:nth-child(4) {
+        transform: rotate(30deg) translateX(265px);
+      }
+      .digit:nth-child(5) {
+        transform: rotate(60deg) translateX(265px);
+      }
+      .digit:nth-child(6) {
+        transform: rotate(90deg) translateX(265px);
+      }
+      .digit:nth-child(7) {
+        transform: rotate(120deg) translateX(265px);
+      }
+      .digit:nth-child(8) {
+        transform: rotate(150deg) translateX(265px);
+      }
+      .digit:nth-child(9) {
+        transform: rotate(180deg) translateX(265px);
+      }
+      .digit:nth-child(10) {
+        transform: rotate(210deg) translateX(265px);
+      }
+      .digit:nth-child(11) {
+        transform: rotate(240deg) translateX(265px);
+      }
+      .digit:nth-child(12) {
+        transform: rotate(270deg) translateX(265px);
       }
     </style>
     <div class="clock">
@@ -56,6 +116,20 @@
         <div class="hand hour-hand"></div>
         <div class="hand min-hand"></div>
         <div class="hand sec-hand"></div>
+        <div class="digits">
+          <div class="digit">1</div>
+          <div class="digit">2</div>
+          <div class="digit">3</div>
+          <div class="digit">4</div>
+          <div class="digit">5</div>
+          <div class="digit">6</div>
+          <div class="digit">7</div>
+          <div class="digit">8</div>
+          <div class="digit">9</div>
+          <div class="digit">10</div>
+          <div class="digit">11</div>
+          <div class="digit">12</div>
+        </div>
       </div>
     </div>
 
